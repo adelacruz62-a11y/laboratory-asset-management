@@ -1,0 +1,209 @@
+{
+    "users": [
+        {
+            "id": "U-001",
+            "name": "Maria Santos",
+            "role": "Administrator"
+        },
+        {
+            "id": "U-002",
+            "name": "Ana Cruz",
+            "role": "Laboratory Staff"
+        },
+        {
+            "id": "U-003",
+            "name": "John Dela Cruz",
+            "role": "Requester \/ Viewer"
+        },
+        {
+            "id": "U-004",
+            "name": "Rina Flores",
+            "role": "Requester \/ Viewer"
+        }
+    ],
+    "equipment": [
+        {
+            "id": "EQ-001",
+            "code": "LAP-001",
+            "name": "Laptop Dell XPS",
+            "status": "Available",
+            "location": "Room A-1",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-002",
+            "code": "OSC-020",
+            "name": "Digital Oscilloscope",
+            "status": "Available",
+            "location": "Room B-2",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-003",
+            "code": "PRO-014",
+            "name": "Projector",
+            "status": "Maintenance",
+            "location": "Workshop",
+            "condition": "In repair"
+        },
+        {
+            "id": "EQ-004",
+            "code": "3DP-009",
+            "name": "3D Printer",
+            "status": "Available",
+            "location": "Lab 3",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-005",
+            "code": "MIC-011",
+            "name": "Digital Microscope",
+            "status": "Available",
+            "location": "Lab 1",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-006",
+            "code": "MUL-006",
+            "name": "Digital Multimeter",
+            "status": "Available",
+            "location": "Room B-2",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-007",
+            "code": "ROB-003",
+            "name": "Robotics Kit",
+            "status": "Available",
+            "location": "Lab 3",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-008",
+            "code": "CAM-015",
+            "name": "USB Laboratory Camera",
+            "status": "Available",
+            "location": "Lab 1",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-009",
+            "code": "SEN-021",
+            "name": "Environmental Sensor Kit",
+            "status": "Available",
+            "location": "Room A-1",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-010",
+            "code": "PWR-004",
+            "name": "Adjustable DC Power Supply",
+            "status": "Available",
+            "location": "Room B-2",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-011",
+            "code": "SCA-007",
+            "name": "Document Scanner",
+            "status": "Available",
+            "location": "Office",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-012",
+            "code": "TAB-012",
+            "name": "Android Tablet",
+            "status": "Available",
+            "location": "Room A-1",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-013",
+            "code": "SOL-005",
+            "name": "Solar Panel Trainer",
+            "status": "Available",
+            "location": "Lab 3",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-014",
+            "code": "SIG-018",
+            "name": "Signal Generator",
+            "status": "Available",
+            "location": "Room B-2",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-015",
+            "code": "THM-002",
+            "name": "Thermal Imaging Camera",
+            "status": "Available",
+            "location": "Workshop",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-016",
+            "code": "VR-010",
+            "name": "Virtual Reality Headset",
+            "status": "Available",
+            "location": "Lab 3",
+            "condition": "Good"
+        },
+        {
+            "id": "EQ-017",
+            "code": "WEL-001",
+            "name": "Soldering Station",
+            "status": "Available",
+            "location": "Workshop",
+            "condition": "Good"
+        }
+    ],
+    "requests": [
+        {
+            "id": "BR-101",
+            "equipmentId": "EQ-001",
+            "requesterId": "U-003",
+            "status": "Pending",
+            "requestedDays": 2,
+            "requestedOn": "2026-09-15",
+            "notes": "Need for software testing lab"
+        },
+        {
+            "id": "BR-102",
+            "equipmentId": "EQ-004",
+            "requesterId": "U-004",
+            "status": "Pending",
+            "requestedDays": 5,
+            "requestedOn": "2026-09-15",
+            "notes": "Required for the additive manufacturing workshop"
+        }
+    ],
+    "maintenance": [
+        {
+            "id": "MT-201",
+            "equipmentId": "EQ-003",
+            "requesterId": "U-002",
+            "status": "Open",
+            "description": "Projector flickers during startup"
+        },
+        {
+            "id": "MT-202",
+            "equipmentId": "EQ-002",
+            "requesterId": "U-002",
+            "status": "Open",
+            "description": "Oscilloscope probe cable needs replacement"
+        }
+    ],
+    "auditLogs": [
+        {
+            "id": "AL-901",
+            "userId": "U-003",
+            "action": "SUBMITTED",
+            "module": "Borrowing",
+            "recordId": "BR-101",
+            "description": "Borrowing request submitted for LAP-001",
+            "createdAt": "2026-09-15T01:47:38+00:00"
+        }
+    ]
+}
